@@ -1,0 +1,32 @@
+Images for Luxury Architecture Designs Website
+===============================================
+
+Replace these placeholder references with actual images:
+
+hero-bg.jpg       - Main hero background (1920x1080)
+about-image.jpg   - About section image (800x600)
+blog-1.jpg        - Blog post thumbnail (600x400)
+blog-2.jpg        - Blog post thumbnail (600x400)
+blog-3.jpg        - Blog post thumbnail (600x400)
+blog-4.jpg        - Blog post thumbnail (600x400)
+blog-5.jpg        - Blog post thumbnail (600x400)
+blog-6.jpg        - Blog post thumbnail (600x400)
+portfolio-1.jpg   - Portfolio image (800x600)
+portfolio-2.jpg   - Portfolio image (800x600)
+portfolio-3.jpg   - Portfolio image (800x600)
+portfolio-4.jpg   - Portfolio image (800x600)
+portfolio-5.jpg   - Portfolio image (800x600)
+team-1.jpg        - Team member photo (400x400)
+team-2.jpg        - Team member photo (400x400)
+team-3.jpg        - Team member photo (400x400)
+logo.svg          - Company logo
+favicon.svg       - Browser favicon
+og-image.jpg      - Open Graph social sharing image (1200x630)
+
+Image Sources Used (Unsplash):
+- https://images.unsplash.com/photo-1600596542815-ffad4c1539a9
+- https://images.unsplash.com/photo-1600607687939-ce8a6c25118c
+- https://images.unsplash.com/photo-1613490493576-7fde63acd811
+- https://images.unsplash.com/photo-1600585154340-be6161a56a0c
+- https://images.unsplash.com/photo-1512917774080-9991f1c4c750
+- https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3

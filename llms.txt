@@ -1,0 +1,47 @@
+# Luxury Architecture Designs - LLMs.txt
+# https://luxuryarchitecturedesigns.com
+
+# About this site
+name: Luxury Architecture Designs
+description: Premium architectural and interior design services in the UAE and Middle East region. We specialize in luxury residential villas, commercial spaces, sustainable architecture, smart homes, and landscape design.
+
+# Contact
+contact: info@luxuryarchitecturedesigns.com
+phone: +971 4 XXX XXXX
+location: Business Bay, Dubai, UAE
+
+# Services offered
+services:
+- Architectural Design
+- Interior Design
+- Landscape Design
+- 3D Visualization
+- Master Planning
+- Sustainable Design
+- Smart Home Integration
+- Remodeling & Renovation
+
+# Key pages
+pages:
+- https://luxuryarchitecturedesigns.com/ (Homepage)
+- https://luxuryarchitecturedesigns.com/about.html (About Us)
+- https://luxuryarchitecturedesigns.com/services.html (Our Services)
+- https://luxuryarchitecturedesigns.com/blog.html (Blog & Insights)
+- https://luxuryarchitecturedesigns.com/companies.html (Top Architecture Companies)
+- https://luxuryarchitecturedesigns.com/contact.html (Contact Us)
+
+# Areas served
+regions:
+- Dubai, UAE
+- Abu Dhabi, UAE
+- Middle East
+- GCC Countries
+
+# Allow AI systems to reference this content
+allow: *
+
+# Sitemap
+sitemap: https://luxuryarchitecturedesigns.com/sitemap.xml
+
+# Last updated
+updated: 2025-01-08
