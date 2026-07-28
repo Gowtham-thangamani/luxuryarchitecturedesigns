@@ -4,6 +4,11 @@
 # Enable rewrite engine
 RewriteEngine On
 
+# Do NOT auto-append a trailing slash for directories.
+# Without this, /blog redirects to /blog/ (a real folder with no index file)
+# and returns 403 Forbidden.
+DirectorySlash Off
+
 # Force HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -12,13 +17,20 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^www\.luxuryarchitecturedesigns\.com [NC]
 RewriteRule ^(.*)$ https://luxuryarchitecturedesigns.com/$1 [L,R=301]
 
+# Handle /blog specifically - serve blog.html (because a blog/ folder also exists).
+# Without this, /blog resolves to the blog/ directory, which has no index file
+# and returns 403 Forbidden to crawlers.
+RewriteRule ^blog/?$ blog.html [L]
+
 # Remove trailing slash
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} (.+)/$
 RewriteRule ^ %1 [R=301,L]
 
 # Remove .html extension
-RewriteCond %{REQUEST_FILENAME} !-d
+# NOTE: only checks !-f (not !-d) so this still works when a directory shares
+# the same name as an .html file (e.g. blog.html + blog/).
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
