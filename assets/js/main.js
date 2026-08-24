@@ -1546,9 +1546,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const exportCsvBtn = document.getElementById('exportCsvBtn');
     if (exportCsvBtn) exportCsvBtn.addEventListener('click', exportCSV);
     
-    // Contact form
+    // Contact form (skip if wired to DAS Central Leads via data-das-lead)
     const contactForm = document.getElementById('contactForm');
-    if (contactForm) contactForm.addEventListener('submit', handleContactForm);
+    if (contactForm && !contactForm.hasAttribute('data-das-lead')) contactForm.addEventListener('submit', handleContactForm);
     
     // Blog updated event
     window.addEventListener('blogUpdated', () => renderPublicBlog());
